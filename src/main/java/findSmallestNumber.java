@@ -1,6 +1,13 @@
 public class findSmallestNumber {
 
-    int i = 10;
+    public static int findSmallestInt(int[] args) {
+        int smallestNumber = args[0];
 
-    String dupa = "wielka";
+        for (int i = 1; i < args.length; i++) {
+            if (smallestNumber > args[i])
+                smallestNumber = args[i];
+        }
+
+        return smallestNumber;
+    }
 }
